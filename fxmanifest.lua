@@ -1,7 +1,7 @@
 fx_version 'cerulean'
-name 'joehud'
-author 'CosmoKramer / joerogan#0001'
-description 'HUD & Seatbelt & Speedlimiter System'
+name 'joemap'
+author 'joerogan#0001'
+description 'Circle Map with Atlas Stream'
 game 'gta5'
 
 ui_page 'html/ui.html'
