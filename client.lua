@@ -2,7 +2,16 @@ local minimap = RequestScaleformMovie("minimap")
 
 Citizen.CreateThread(function()
     while true do
-        Wait(1500)
+        Wait(1250)
+
+        if IsPauseMenuActive() then
+            SendNUIMessage({mapfoil = true})
+            SendNUIMessage({mapoutline = false})
+        else 
+            SendNUIMessage({mapfoil = false})
+            SendNUIMessage({mapoutline = true})
+        end
+
         if Config.Hidemapoutsidecar then
           if Config.Hidemapwhenengineoff then
             local player = PlayerPedId()
@@ -29,8 +38,6 @@ Citizen.CreateThread(function()
                 SetRadarZoom(1150)
             end
           end
-        else
-            break
         end
     end
 end)

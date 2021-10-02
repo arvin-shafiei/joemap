@@ -8,4 +8,10 @@ window.addEventListener("message", function (event) {
     $(".outline").hide();
   }
 
+  if (data.mapfoil == true) {
+    $(".mapfoil").hide();
+  } else if (data.mapfoil == false) {
+    $(".mapfoil").show();
+  }
+
 })})
