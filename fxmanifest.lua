@@ -9,9 +9,10 @@ ui_page 'html/ui.html'
 files {
     'html/ui.html',
     'html/script.js',
-    'html/style.css',
+    'html/style.css'
 }
 
 client_scripts {
     'client.lua',
+    'config.lua'
 }
