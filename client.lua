@@ -12,6 +12,8 @@ Citizen.CreateThread(function()
             SendNUIMessage({mapoutline = true})
         end
 
+        SetRadarZoom(1150)
+
         if Config.Hidemapoutsidecar then
           if Config.Hidemapwhenengineoff then
             local player = PlayerPedId()
@@ -24,7 +26,6 @@ Citizen.CreateThread(function()
             else
                 ToggleRadar(false)
                 SendNUIMessage({mapoutline = false})
-                SetRadarZoom(1150)
             end
           else
             local player = PlayerPedId()
@@ -35,7 +36,6 @@ Citizen.CreateThread(function()
             else
                 ToggleRadar(false)
                 SendNUIMessage({mapoutline = false})
-                SetRadarZoom(1150)
             end
           end
         end
